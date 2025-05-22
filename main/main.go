@@ -1,15 +1,15 @@
 package main
 
 import (
+	"fmt"
 	"leetCode/questions"
 )
 
 func main() {
 	// Example usage
-	nums := []int{3, 4, 5}
-	result := questions.TriangleType(nums)
-	println(result) // Output: scalene
-	nums2 := []int{3, 3, 3}
-	result2 := questions.TriangleType(nums2)
-	println(result2) // Output: equilateral
+	nums := []int{2, 0, 2}
+	queries := [][]int{{0, 2}, {0, 2}, {1, 1}}
+	result := questions.MaxRemoval(nums, queries)
+	// Print the result
+	fmt.Println(result)
 }
